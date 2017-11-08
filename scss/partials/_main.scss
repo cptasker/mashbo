@@ -1,0 +1,102 @@
+.main-content{
+	clear:both;
+}
+.content{
+	clear:both;
+	padding:10px;
+	text-align:center;
+	color: $nav-font-color;
+	width:320px;
+	margin:0 auto;
+	@media screen and (min-width: $break-small) {
+		padding:30px;
+		width:600px;
+	}
+}
+.text-block{
+	clear:left;
+	.text-block__title{
+		font-weight:bold;
+		margin: 30px 0px 10px 0px;
+	}
+	.text-block__title--large{
+		font-size:24px;
+	}
+	.text-block__title--medium{
+		font-size:20px;
+	}
+	.text-block__paragraph{
+		font-size:14px;
+		margin-bottom:60px;
+	}
+	.text-block__paragraph-bold{
+		font-weight:bold;
+	}
+}
+
+.icon-block{
+	width:340px;
+	margin:0 auto;
+	margin-bottom:30px;
+	@media screen and (min-width: $break-small) {
+		width:570px;
+	}
+}
+.icon-btn__icon{
+	width:140px;
+	height:150px;
+	cursor:pointer;
+	float:left;
+	margin:5px;
+	@media screen and (min-width: $break-small) {
+		margin:15px 20px;
+		width:150px;
+	}
+}
+.steps-block{
+	color: $blue;
+	.steps-block__step-item{
+		width:300px;
+		border:2px solid $blue;
+		height:200px;
+		margin:0 auto;
+		margin-bottom:10px;
+		@include box-shadow(5px, 5px, 0px, 0, $blue, false);
+		@media screen and (min-width: $break-small) {
+			width:600px;
+			height:120px;
+			margin-bottom:10px;
+		}
+	}
+	.steps-block__title{
+		color:#ffffff;
+		background-color: $blue;
+		font-size:12px;
+		font-weight:bold;
+		width:20px;
+		height:198px;
+		float:left;
+		position:relative;
+		@media screen and (min-width: $break-small) {
+			width:20px;
+			height:118px;
+		}
+	}
+	.steps-block__title-vertical-text{
+		width:50px;
+		font-size:14px;
+		position:absolute;
+		top:90px;
+		left:-17px;
+		transform: rotate(270deg);
+		@media screen and (min-width: $break-small) {
+			top:40px;
+		}
+	}
+	.steps-block__text{
+		padding:30px;
+		@media screen and (min-width: $break-small) {
+			padding:20px;
+		}
+	}
+}
